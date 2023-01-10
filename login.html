@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f19f952ebf.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <style>
+        nav a {
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        nav{
+            display: flex;
+            justify-content:space-between;
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 1px solid salmon;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 5px;
+
+
+        }
+
+        .login-form h3 {
+            margin-top: 0px;
+        }
+
+        .login-form input {
+            margin-top: 8px;
+            border-width: thin;
+            border-radius: 5px;
+            padding: 6px 10px 6px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+            border-color: olive;
+            border-top-color: yellow;
+            border-left-color: lightcoral;
+
+        }
+
+
+        .login-form input[type=submit] {
+            background-color: olive;
+            border: 0px;
+            color: white;
+            font-weight: 700;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Order</a>
+                <a href="">Contact</a>
+                <a href="">About</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-sharp fa-solid fa-right-to-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+
+    <section class="login-container">
+        <form class="login-form">
+            <h3>Please Login</h3>
+            <input type="email" name="email" id="" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" id="" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+</body>
+
+</html>
